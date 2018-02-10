@@ -1,0 +1,14 @@
+body{
+    margin: 0 auto;
+   
+    background: rgb(231, 231, 231);
+    color: rgb(59, 56, 56);
+}
+
+
+.question-space
+{
+    margin: 0 auto;
+    padding: 20px;
+    width: 500px;
+}
