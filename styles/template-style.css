@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Lato|Playfair+Display|Raleway|Cormorant+Garamond');
+
+body{
+    text-align: center;
+}
+h1{
+    color: #F0a89f;
+    font-size: 50px;
+    font-family: 'Cormorant Garamond', serif;
+}
+h2, h4{
+    margin-top: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+hr{
+    width: 60%;
+}
+
+.one-circle{
+    display: inline-block;
+    margin: 10px 10px 40px 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+#circle1{
+    background-color: red;
+}
+#circle2{
+    background-color: pink;
+}
+#circle3{
+    background-color: green;
+}
+#circle4{
+    background-color:lightskyblue;
+}
+#circle5{
+    background-color: lightseagreen;
+}
+
+
+.fonts{
+    display: inline-block;
+    font-size: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#font1{
+    font-family: 'Indie Flower', cursive;
+}
+#font2{
+    font-family: 'Raleway', sans-serif;
+}
+#font3{
+    font-family: 'Lato', sans-serif;
+}
+#font4{
+    font-family: 'Playfair Display', serif;
+}
+
+.image{
+    padding: 25px;
+    height: 150px;
+    width: auto;
+    display: inline-block;
+}
