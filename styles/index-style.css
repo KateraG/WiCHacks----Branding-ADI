@@ -1,6 +1,8 @@
 body{
     background-color: #f9fafc;
     font-family: 'Open Sans', sans-serif;
+    padding-right: 5%;
+    padding-left: 5%;
 }
 
 h1{
@@ -35,7 +37,6 @@ div{
     border: none;
     cursor: pointer;
     clear: all;
-    right:0;
     font-size: 20px;
     float: right;
     font-style: bold;
@@ -46,6 +47,6 @@ div{
 footer{
     position: absolute;
     bottom: 0;
-    width: 99%;
+    width: 89%;
     text-align:center;
 }
