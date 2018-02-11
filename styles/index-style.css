@@ -2,45 +2,76 @@ body{
     background-color: #f9fafc;
     font-family: 'Open Sans', sans-serif;
 }
+#main
+{
+    width: 900px;
+    height: 600px;
+    margin: 0 auto;
+    background: rgb(44, 43, 43);
+    box-shadow: rgba(53, 49, 49, 0.61);
+    box-shadow: 10px 10px 20px rgba(54, 42, 53, 0.836);
+    margin-top: 5%;
+}
 
-h1{
-    size: 24em;
+#header{
     color: #F0a89f;
+    padding: 10px;
+    top: 10%;
+    letter-spacing: 3px;
+    
+}
+#signin{
+    padding: 25px;
+    float: right;
+    margin: 0;
 }
 
-p{
+#info
+{
     text-align: center;
-    width: 70%;
-    margin: 10% auto auto auto;
-    font-size: 20px;
+    padding: 20px;
+    width: 75%;
+    margin: 0 auto;
 }
+
 
 div{
-    width: 100%;
     text-align: center;
-    margin-top: 10%;
+    color: white;
+    font-size: 15px;
+   
 }
 
-#brand{
+#brand-button{
     background-color: #F0a89f;
     border: none;
-    font-size: 30px;
+    font-size: 25px;
     padding: 20px;
     cursor: pointer;
     color: white;
     border-radius: 15px;
+    transition: background-color 0.3s ease-in;
 }
+
+#brand-button:hover{
+    background-color: rgb(247, 198, 193);
+    transition: background-color 0.3s ease-in;
+}
+
 
 #signin{
     border: none;
     cursor: pointer;
-    clear: all;
-    right:0;
     font-size: 20px;
-    float: right;
-    font-style: bold;
     color: 	#F0a89f; 
-    background-color: #f9fafc;
+    background: none;
+    padding: 15px;
+}
+
+#signin-button
+{
+    padding: 15px;
+    float: right;
 }
 
 footer{
