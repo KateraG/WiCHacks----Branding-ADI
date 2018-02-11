@@ -11,121 +11,123 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="typefaces.css" media="screen,projection" />
 </head>
-<script>
 
 
-</script>
+<div id="main">
+    <div id="header" class="mega open-sans bold uppercase">
+        <h1>Lux Brands</h1>
+    </div>
+    <button id="continue-button" class="mega open-sans bold uppercase" onclick="nextQuestion()"> Continue </button>
+    <button id="return-button" class="mega open-sans bold uppercase" onclick="back()"> Back </button>
+    <div id="container">
 
-<div id ="header" class="mega open-sans bold uppercase">
-    <h1>Lux Brands</h1>
-</div>
-<div id="container">
-    <form>
-        <div class="question-space" id="question-01">
+        <form>
+            <div class="question-space" id="question-01">
 
-            <p class="question">What kind of brand are you developing?</p>
+                <p class="question thin bold">What kind of brand are you developing?</p>
 
-            <div id="options">
-                <span>
-                    <label for="Art/Design">Art/Design</label>
-                    <input type="checkbox" id="art-design">
+                <div id="options">
+                    <form>
+                        <label for="Art/Design">Art/Design</label>
+                        <input type="radio" name= "choice" id="art-design" value = "Art/Design">
 
-                    <label for="Gourmet">Gourmet</label>
-                    <input type="checkbox" id="gourmet">
+                        <label for="Gourmet">Gourmet</label>
+                        <input type="radio" name= "choice"id="gourmet" value = "Gourmet">
 
-                    <label for="Software">Software</label>
-                    <input type="checkbox" id="software">
+                        <label for="Software">Software</label>
+                        <input type="radio" name= "choice"id="software" value = "Software">
 
-                    <label for="Fashion">Fashion</label>
-                    <input type="checkbox" id="fashion">
+                        <label for="Fashion">Fashion</label>
+                        <input type="radio" name= "choice"id="fashion" value = "Fashion">
 
-                    <label for="Business">Business</label>
-                    <input type="checkbox" id="business">
+                        <label for="Business">Business</label>
+                        <input type="radio" name= "choice"id="business" value = "Business">
 
-                    <label for="Public Figure">Public Figure</label>
-                    <input type="checkbox" id="public-figure">
-                </span>
+                        <label for="Public Figure">Public Figure</label>
+                        <input type="radio" name= "choice"id="public-figure" value = "Public Figure">
+                    </form>
+                </div>
             </div>
-        </div>
 
-        <div class="question-space" id="question-02">
-            <p class="question">What is the theme for your product?</p>
-            <span>
-                <label for="Art/Design">Professional</label>
-                <input type="checkbox" id="professional">
-
-                <label for="Portfolio">Portfolio</label>
-                <input type="checkbox" id="portfolio">
-
-                <label for="Software">Dark</label>
-                <input type="checkbox" id="dark">
-
-                <label for="Fashion">Warm</label>
-                <input type="checkbox" id="warm">
-            </span>
-
-        </div>
-
-        <div class="question-space" id="question-03">
-                <p class="question">Who is your main audience?</p>
+            <div class="question-space" id="question-02">
+                <p class="question">What is the theme for your product?</p>
                 <span>
-                    <label for="Children">Children: 7 - 12</label>
-                    <input type="checkbox" id="children">
-    
-                    <label for="Teens">Teens: 13 - 18</label>
-                    <input type="checkbox" id="teens">
-    
-                    <label for="Adults">Adults: 19 - 25+</label>
-                    <input type="checkbox" id="adults">
-    
-                    <label for="Senior">Seniors: 65+</label>
-                    <input type="checkbox" id="senior">
+                    <label for="Art/Design">Professional</label>
+                    <input type="checkbox" id="professional">
+
+                    <label for="Portfolio">Portfolio</label>
+                    <input type="checkbox" id="portfolio">
+
+                    <label for="Software">Dark</label>
+                    <input type="checkbox" id="dark">
+
+                    <label for="Fashion">Warm</label>
+                    <input type="checkbox" id="warm">
                 </span>
-    
+
+            </div>
+
+            <div class="question-space" id="question-03">
+                <div>
+                    <p class="question">Who is your main audience?</p>
+                    <span>
+                        <label for="Children">Children: 7 - 12</label>
+                        <input type="checkbox" id="children">
+
+                        <label for="Teens">Teens: 13 - 18</label>
+                        <input type="checkbox" id="teens">
+
+                        <label for="Adults">Adults: 19 - 25+</label>
+                        <input type="checkbox" id="adults">
+
+                        <label for="Senior">Seniors: 65+</label>
+                        <input type="checkbox" id="senior">
+                    </span>
+
+                </div>
+
             </div>
             <div class="question-space" id="question-04">
-                    <p class="question">Who is the purpose of your brand?</p>
-                    <span>
-                        <label for="Promoting">Promoting</label>
-                        <input type="checkbox" id="Promoting">
-        
-                        <label for="Selling-Product">Selling Product</label>
-                        <input type="checkbox" id="selling product">
-        
-                        <label for="Presenting Work">Presenting Work</label>
-                        <input type="checkbox" id="Presenting Work">
-                    </span>
-        
-                </div>
-      
-    </form>
-    <button id="continue-button" onclick = "nextQuestion()"> Continue </button>
-    <button id="continue-button" onclick = "nextQuestion()"> Continue </button>
+                <p class="question">Who is the purpose of your brand?</p>
+                <span>
+                    <label for="Promoting">Promoting</label>
+                    <input type="checkbox" id="Promoting">
+
+                    <label for="Selling-Product">Selling Product</label>
+                    <input type="checkbox" id="selling product">
+
+                    <label for="Presenting Work">Presenting Work</label>
+                    <input type="checkbox" id="Presenting Work">
+                </span>
+
+            </div>
+
+        </form>
+
+    </div>
+
 </div>
 
 <script>
-    
-    $(document).ready(function () 
-    {
+
+    $(document).ready(function () {
         $("#question-02").hide();
         $("#question-03").hide();
         $("#question-04").hide();
-       
+
     });
-    function setupUI() 
-    {
+    function setupUI() {
         document.querySelector("#").onchange = function () {
         }
     }
 
-    function nextQuestion()
-    {
-       
-        $("#question-01").remove();
-        $("#question-02").show();
-      
+    function nextQuestion() {
+
     }
 
+    function back() {
+
+    }
 </script>
 
 

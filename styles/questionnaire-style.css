@@ -1,56 +1,85 @@
+html, body{
+    height: 100%;
+   border: 20px white;
+}
+
 body{
     margin: 0;
     padding: 20px;
     letter-spacing: 1.3px;
     background: rgb(252, 252, 252);
-    color: rgb(59, 56, 56);
     position: relative;
+   
+}
+#header
+{
+   
+}
+
+#main
+{
+    width: 600px;
+    overflow: hidden;
+    margin: 0 auto;
 }
 #container
 {
-   
-    margin: 0 auto;
-    width: 650px;
-   border-radius: 5%;
-    background: rgb(116, 227, 255);
+    border-radius: 5%;
+    background: rgb(59, 56, 56);
     font-family: 'Open Sans', sans-serif;
-    color: rgb(62, 63, 65);
+    color: white
 }
 
-span{
+#options{
     display: flex;
     flex-flow: column;
-    
+   font-size: 18px;
 }
 
 .question-space
 {
-    margin: 0 auto;
     padding: 25px;
     width: 500px;
     position: relative;
     top: 50%;
     bottom: 50%;
+    font-size: 20px;
 }
 
-#continue-button
+#continue-button, #return-button
 {
+    position: absolute;
+    top: 50%;
     cursor: pointer;
     border: none;
-    padding: 15px;
-    width: 100px;
-    color: white;
-    background-color: rgb(42, 168, 206);
+    padding: 0px;
+    color: rgb(38, 37, 39);
+    background: none;
+    font-size: 30px;
+    -webkit-transition:color 0.3s ease-in;
+    -moz-transition:color 0.3s ease-in;
+    transition:color 0.3s ease-in;
+}
+#continue-button
+{
     float: right;
-   
-    -webkit-transition: background-color 0.3s ease-in;
-    -moz-transition: background-color 0.3s ease-in;
-    transition: background-color 0.3s ease-in;
+    left: 72%;
+}
+#return-button{
+    float: left;
+    left:20%;
 }
 #continue-button:hover{
-    background-color: rgb(61, 57, 57);
-   
-    -webkit-transition: background-color 0.3s ease-in;
-    -moz-transition: background-color 0.3s ease-in;
-    transition: background-color 0.3s ease-in;
+
+    color: rgb(110, 105, 116);
+    -webkit-transition:color 0.3s ease-in;
+    -moz-transition:color 0.3s ease-in;
+    transition:color 0.3s ease-in;
 }
+#return-button:hover{
+    
+        color: rgb(110, 105, 116);
+        -webkit-transition:color 0.3s ease-in;
+        -moz-transition:color 0.3s ease-in;
+        transition:color 0.3s ease-in;
+    }
